@@ -1,0 +1,203 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Lemon milk', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.cabecalho {
+    background-color: #1a1a1ae1;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.cabecalho img{
+    width: 70px;
+    height: 80px;
+    margin-left: 30px;
+}
+.cabecalho .menu ul {
+    list-style: none;
+    margin-right: 80px;
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho .menu ul .item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+    position: relative;
+}
+.cabecalho .menu ul .item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgba(0,255,255,0.5);
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+.cabecalho .menu ul .item a:hover::after {
+    width: 100%;
+}
+.cabecalho .menu ul .item a:hover {
+    color: rgba(0,255,255,0.5);
+}
+#container{
+    margin-top: 120px;
+    display: block;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#container h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgba(15, 224, 224, 0.911);
+}
+#container p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.imagem{
+    display: flex;
+    gap: 60px;
+}
+.moça{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    margin-left: 100px;
+}
+
+.imagem .main{
+    margin-left: 80px;
+    display: block;
+    justify-content: space-between;
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.5);
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+.imagem .main:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.imagem .main::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.imagem .main:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+#sobre{
+    margin: 80px;
+    text-align: center;
+    margin-top: 200px;
+}
+#sobre h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgba(15, 224, 224, 0.911);
+}
+
+#sobre p{
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#download{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#download button{
+    background-color: rgba(0, 255, 255, 0.5);
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.5s, background-color 0.5s;
+}
+
+#download button:hover{
+    background-color: rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+#contatos{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+#contatos a{
+    color: rgba(0, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+    position: relative;
+}
+#contatos a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(98, 255, 255);
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+#contatos a:hover::after{
+    width: 100%;
+}
+
+.rodape{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 5px;
+    background-color: #1a1a1ae1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
