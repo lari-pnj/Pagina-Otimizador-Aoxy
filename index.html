@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Otimizador Aoxy</title>
 </head>
 <body class="bg">
-    <header class="cabecalho">
+    <header class="cabecalho" data-aos="fade-down" data-aos-duration="900">
         <img src="img/iconeapp1.png" alt="logo aoxy">
         <nav class="menu">
             <ul>
@@ -18,7 +19,7 @@
         </nav>
     </header>
 
-    <div id="container">
+    <div data-aos="zoom-out-up"data-aos-duration="1000" id="container">
         <h1>Otimize Seu windows com <span>poucos</span> cliques</h1>
         <p>Bem-vindo ao Otimizador Aoxy, sua ferramenta de otimização de processos.</p>
 
@@ -27,16 +28,17 @@
             <a href="https://github.com/lari-pnj/Otimizador-Aoxy-V1"target="_blank" style="color: #8b949e; padding: 1rem;" >Ver no github</a>
         </div>
     </div>
-    <div class="imagem">
+    <div class="imagem" data-aos="zoom-out-up"
+     data-aos-duration="1000">
         <img src="img/img4.png" alt="imgem ilustrativa do otimizador aoxy">
     </div>
 
-    <div id="sobre">
+    <div id="sobre" data-aos="zoom-in-left" data-aos-duration="1000">
         <h1>Sobre</h1>
         <p>O Otimizador Aoxy é uma ferramenta projetada para melhorar a eficiência dos processos do seu computador, ajudando a melhorar o desempenho. atraves de atalhos de teclado e otimizações de sistema, o Aoxy proporciona uma experiência mais fluida e rápida.</p>
     </div>
 
-    <div id="contatos">
+    <div id="contatos" data-aos="zoom-in-right" data-aos-duration="1000">
         <h1>Contatos</h1>
         <a href="https://lari-pnj.github.io/Link-in-bio/" target="_blank">Link para Minhas Redes Sociais</a>
     </div>
@@ -45,4 +47,8 @@
         <p>&copy; 2025 Otimizador Aoxy. Todos os direitos reservados.</p>
     </footer>
 </body>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
